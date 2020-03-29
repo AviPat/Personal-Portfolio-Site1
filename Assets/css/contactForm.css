@@ -1,0 +1,32 @@
+.contactMe-form label {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.contactMe-form .form-control {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #4b5456;
+}
+
+.contactMe-form input {
+  min-height: 56px;
+}
+
+.contactMe-form textarea {
+  min-height: 150px;
+}
+
+.contactMe-form button {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=contactForm.css.map */

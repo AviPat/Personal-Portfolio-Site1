@@ -1,0 +1,44 @@
+@mixin common-styles-outline-button {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: normal;
+    min-width: 185px;
+    min-height: 56px;
+}
+
+.btn-white-outline-transparent-bg {
+    @include common-styles-outline-button;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+}
+.btn-green-outline-transparent-bg {
+    @include common-styles-outline-button;
+    border: 2px solid #2ecc71;
+    border-radius: 0px;
+    background-color: rgba(46, 204, 113, 0);
+    color: #2ecc71;
+}
+.btn-green-bg {
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    font-weight: normal;
+    min-width: 71px;
+    min-height: 29px;
+    background-color: #2ecc71;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.btn-black-bg {
+    @include common-styles-outline-button;
+    min-width: 185px;
+    min-height: 56px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: #191f21;
+    color: #ffffff;
+}
