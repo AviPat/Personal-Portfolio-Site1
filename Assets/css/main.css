@@ -421,9 +421,41 @@ section {
   background-color: #149ddd !important;
 }
 
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main-section {
+    margin-left: 0px;
+  }
+}
+
 @media (min-width: 1024px) {
   #hero-banner {
     background-attachment: fixed;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-nav-active #header {
+    left: 0;
+  }
+  #hero-banner {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #hero-banner h1 {
+    font-size: 1.6rem;
+    line-height: 36px;
+  }
+  #hero-banner p {
+    font-size: 1rem;
+  }
+  .about-wrapper h3 {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
