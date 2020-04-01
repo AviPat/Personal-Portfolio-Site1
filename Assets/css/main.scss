@@ -452,6 +452,244 @@ section {
         }
     }
 }
+.contact-wrapper {
+    .info {
+        padding: 30px;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.12);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h4 {
+            padding: 0 0 0 60px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #050d18;
+        }
+        p {
+            padding: 0 0 10px 60px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: #173b6c;
+        }
+        i {
+            font-size: 1.25rem;
+            color: #149ddd;
+            float: left;
+            width: 44px;
+            height: 44px;
+            background: #dff3fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: #fff;
+                background-color: #149ddd;
+            }
+        }
+    }
+}
+.rating-wrapper {
+    background: url("../Images/ratemysiteBanner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    // &:before {
+    //     content: "";
+    //     background: rgba(5, 13, 24, 0.6);
+    //     position: absolute;
+    //     bottom: 0;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: 1;
+    // }
+    .rating-form-container {
+        z-index: 2;
+        h4 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 1.5px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .form-layout {
+        width: 65%;
+        padding: 2.5rem;
+        margin: 2rem auto;
+        background: rgba(16, 16, 16, 0.72);
+        min-height: 500px;
+        h5 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 2rem;
+            color: #1ec8e9;
+            text-align: center;
+            line-height: 1.5;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        p {
+            font-family: 'Josefin Sans', sans-serif;
+            color: #fff;
+            margin: 0 0 1.5em 0;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+    .rating-form {
+        label {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            &.error {
+                color: #FF6347;
+                font-size: 0.8rem;
+            }
+        }
+        .form-control {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            padding: 0.9rem 1rem;
+            background: rgba(88, 88, 88, 0.08);
+            border: 1px solid #848484;
+            border-radius: 0px;
+            outline: none;
+        }
+        textarea {
+            min-height: 120px;
+        }
+        .star-rating {
+            margin-bottom: 20px;
+            h6 {
+                font-family: 'PT Sans', sans-serif;
+                font-size: 1rem;
+                color: #fff;
+            }
+        }
+        .rating-flx {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            .rate-left {
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                text-align: center;
+                background: #1ec8e9;
+                padding: 0.5em 0em;
+                margin-top: 15px;
+                position: relative;
+                border-radius: 5px;
+                color: #fff;
+                flex: 0 0 25%;
+                max-width: 25%;
+                &:before {
+                    position: absolute;
+                    top: 15px;
+                    right: -17px;
+                    background: transparent;
+                    content: "";
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 14px solid#1ec8e9;
+                    transform: rotate(90deg);
+                }
+            }
+            .rate-right{
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                text-align: center;
+                background: #1ec8e9;
+                padding: 0.5em 0em;
+                margin-top: 15px;
+                position: relative;
+                border-radius: 5px;
+                color: #fff;
+                flex: 0 0 25%;
+                max-width: 25%;
+                &:before {
+                    position: absolute;
+                    top: 15px;
+                    left: -17px;
+                    background: transparent;
+                    content: "";
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 14px solid #1ec8e9;
+                    transform: rotate(270deg);
+                }
+            }
+        }
+    }
+    .btn-review-submit {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        min-width: 175px;
+        min-height: 45px;
+        text-transform: uppercase;
+        color: #f5ecf1;
+        border: 1px solid #696867;
+        border-radius: 5px;
+        background: rgba(16, 16, 16, 0.47);
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+}
+.rating { 
+  border: none;
+  float: left;
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin: 15px 15px 0px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: 'boxicons';
+  display: inline-block;
+  content: "\ebea";
+}
+
+.rating > label { 
+  color: #ddd; 
+    float: right; 
+    margin-right: 15px;
+}
+.starText {
+    display: block;
+    margin-left: 10px;
+}
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+#nameError {
+    font-size: 0.8rem;
+    text-align: left;
+    color: red;
+    margin-top: 5px;
+}
+#starRatingError {
+    font-size: 0.8rem;
+    text-align: left;
+    color: red;
+    margin-top: 5px;
+}
 @media (max-width: 1199px) {
     #header {
         left: -300px;
@@ -465,7 +703,7 @@ section {
         background-attachment: fixed;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .mobile-nav-active {
         #header {
             left: 0;
@@ -488,6 +726,38 @@ section {
     .about-wrapper {
         h3 {
             margin-top: 20px;
+        }
+    }
+    .rating-wrapper {
+        .rating-form-container {
+            h4 {
+                font-size: 2rem;
+            }
+        }
+        .form-layout {
+            width: 90%;
+            h5 {
+                font-size: 1rem;
+                letter-spacing: 0px;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+        }
+        .rating-form {
+            .rating-flx {
+                .rate-left {
+                    display: none;
+                }
+                .rating {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin: 0px;
+                }
+                .rate-right {
+                    display: none;
+                }
+            }
         }
     }
 }

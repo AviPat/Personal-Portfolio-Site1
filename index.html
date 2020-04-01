@@ -83,6 +83,12 @@
                                 <span>Contact</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="#rating">
+                                <i class="bx bx-happy"></i>
+                                <span>Rate My Site</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <button type="button" class="mobile-nav-toggle d-xl-none">
@@ -101,7 +107,7 @@
                 <div class="container">
                     <div class="section-title">
                         <h2>About</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>The name's AVINASH BHAT. I am a tireless seeker of knowledge, occasional purveyor of wisdom and also, coincidentally, a front end web developer. I just started designing websites and I must say I love every minute of it.</p>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
@@ -152,7 +158,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                            <p>he longer I work on the web, the more I realize that what separates the good people from the really good people isn’t what they know; it’s how they think. Obviously knowledge is important—critical in some cases—but in a field that changes so quickly, how you go about acquiring that knowledge is always going to be more important (at least in the long term) than what you know at any given time. And perhaps most important of all: how you use that knowledge to solve everyday problems.</p>
                         </div>
                     </div>
                 </div>
@@ -512,6 +518,77 @@
                     </div>
                 </div>
             </section>
+            <section id="contact" class="contact-wrapper">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Contact</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                    <div class="row" data-aos="fade-in">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-stretch">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="icofont-google-map"></i>
+                                    <h4>Location</h4>
+                                    <p>Flat No. T5, "BSR Royal Enclave", Bangalore - 560068</p>
+                                </div>
+                                <div class="email">
+                                    <i class="icofont-envelope"></i>
+                                    <h4>Email</h4>
+                                    <p>avinashbhat719@gmail.com</p>
+                                </div>
+                                <div class="phone">
+                                    <i class="icofont-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+91 9241058690</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="rating" class="rating-wrapper">
+                <div class="rating-form-container">
+                    <h4>RATE MY WEBSITE</h4>
+                    <div class="form-layout">
+                        <h5>DO YOU LIKE OUR NEW SITE?</h5>
+                        <p>Let us know your experience</p>
+                        <form class="rating-form" id="js-rating-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="col-md-6 mb-4">
+                                    <label for="reviewFirstName">First Name</label>
+                                    <input type="text" name="fname" class="form-control" id="reviewFirstName" required />
+                                    <p id="nameError"></p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label for="reviewLastName">Last Name</label>
+                                    <input type="text" name="lname" class="form-control" id="reviewLastName" />
+                                </div>
+                            </div>
+                            <div class="star-rating">
+                                <h6>Please rate our site</h6>
+                                <div class="rating-flx">
+                                    <span class="rate-left">Not Bad</span>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="starRating" value="5" required /><label class = "full" for="star5" title="Awesome - 5 stars"><span class="starText">5</span></label>
+                                        <input type="radio" id="star4" name="starRating" value="4" required /><label class = "full" for="star4" title="Pretty good - 4 stars"><span class="starText">4</span></label>
+                                        <input type="radio" id="star3" name="starRating" value="3" required /><label class = "full" for="star3" title="Meh - 3 stars"><span class="starText">3</span></label>
+                                        <input type="radio" id="star2" name="starRating" value="2" required /><label class = "full" for="star2" title="Kinda bad - 2 stars"><span class="starText">2</span></label>
+                                        <input type="radio" id="star1" name="starRating" value="1" required /><label class = "full" for="star1" title="Sucks big time - 1 star"><span class="starText">1</span></label>
+                                    </fieldset>
+                                    <span class="rate-right">Excellent</span>
+                                </div>
+                                <p id="starRatingError"></p>
+                            </div>
+                            <div class="form-row">
+                                <label for="reviewTextArea">How would you suggest to improve it?</label>
+                                <textarea class="form-control" name="textarea_field" id="reviewTextArea"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-review-submit" id="js-review-submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
     <script src="Assets/vendor/jquery/jquery.min.js"></script>
@@ -525,6 +602,10 @@
     <script src="Assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="Assets/vendor/typed.js/typed.min.js"></script>
     <script src="Assets/vendor/aos/aos.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
     <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/ratingFormValidation.js"></script>
 </html>
