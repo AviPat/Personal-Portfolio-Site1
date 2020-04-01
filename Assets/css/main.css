@@ -125,7 +125,7 @@
 #hero-banner {
   width: 100%;
   height: 100vh;
-  background: url("../Images/custom-hero-banner.jpeg") top center;
+  background: url("../Images/custom-hero-banner_optimized.jpeg") top center;
   background-size: cover;
 }
 
@@ -571,7 +571,7 @@ section {
 }
 
 .rating-wrapper {
-  background: url("../Images/ratemysiteBanner.jpg");
+  background: url("../Images/ratemysiteBanner_optimized.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
