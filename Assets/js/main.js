@@ -1,6 +1,5 @@
 !(function($) {
     "use strict";
-
     // Hero Banner Typed Feature
     var typed_text = $(".typed").data("typed-items");
     typed_text = typed_text.split(",")

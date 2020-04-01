@@ -891,5 +891,8 @@ section {
   .rating-wrapper .rating-form .rating-flx .rate-right {
     display: none;
   }
+  .rating > label {
+    margin-right: 18px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
