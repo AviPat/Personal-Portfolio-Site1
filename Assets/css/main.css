@@ -798,6 +798,37 @@ section {
   margin-top: 5px;
 }
 
+.notify-modal .modal-content {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.notify-modal .modal-header {
+  background: #FF8C00;
+  border-radius: 0px;
+  border-bottom: 0px;
+  padding: 10px 15px;
+}
+
+.notify-modal .modal-header .modal-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.notify-modal .modal-header .close {
+  opacity: 1;
+  text-shadow: none;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;

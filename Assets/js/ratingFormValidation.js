@@ -33,15 +33,12 @@ $(document).ready(function(e){
          } else {
             $("#nameError").hide();
             $("#starRatingError").hide();
+            $("#js-notify-modal").modal('show');
             console.log("Form Submitted");
             var firname = $("#reviewFirstName").val();
             var lasname = $("#reviewLastName").val();
             var ratingInput = $(".rating input[type=radio]:checked").val();
             var reviewField = $("#reviewTextArea").val();
-            console.log(firname);
-            console.log(lasname);  
-            console.log(ratingInput);
-            console.log(reviewField);
             saveMessage(firname, lasname, ratingInput, reviewField);
          }
     });
