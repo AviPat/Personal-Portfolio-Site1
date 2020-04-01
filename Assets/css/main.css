@@ -865,6 +865,10 @@ section {
   .about-wrapper h3 {
     margin-top: 20px;
   }
+  .travel-wrapper #travel-filters li {
+    padding: 10px 0px 8px 12px;
+    font-size: 0.85rem;
+  }
   .rating-wrapper .rating-form-container h4 {
     font-size: 2rem;
   }
