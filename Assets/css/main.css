@@ -395,7 +395,7 @@ section {
 }
 
 .quotes-wrapper .quote-img {
-  width: 120px !important;
+  width: 135px !important;
   border-radius: 50%;
   margin: 0 auto;
   padding: 10px;
@@ -799,6 +799,14 @@ section {
   margin-top: 5px;
 }
 
+.notify-modal .modal-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .notify-modal .modal-content {
   border: 0px;
   border-radius: 0px;
@@ -944,6 +952,10 @@ section {
   }
   .starText {
     display: none;
+  }
+  .notify-modal .modal-dialog {
+    top: 25%;
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

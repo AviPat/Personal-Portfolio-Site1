@@ -354,7 +354,7 @@ section {
         }
     }
     .quote-img {
-        width: 120px !important;
+        width: 135px !important;
         border-radius: 50%;
         margin: 0 auto;
         padding: 10px;
@@ -499,16 +499,6 @@ section {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    // &:before {
-    //     content: "";
-    //     background: rgba(5, 13, 24, 0.6);
-    //     position: absolute;
-    //     bottom: 0;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     z-index: 1;
-    // }
     .rating-form-container {
         z-index: 2;
         h4 {
@@ -692,6 +682,12 @@ section {
     margin-top: 5px;
 }
 .notify-modal {
+    .modal-dialog {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
     .modal-content {
         border: 0px;
         border-radius: 0px;
@@ -837,5 +833,11 @@ section {
     }
     .starText {
         display: none;
+    }
+    .notify-modal {
+        .modal-dialog {
+            top: 25%;
+            left: 0;
+        }
     }
 }
