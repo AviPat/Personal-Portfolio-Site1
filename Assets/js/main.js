@@ -72,7 +72,21 @@
       }
     });
   });
+// Back to top button
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    $('.back-to-top-link').fadeIn('slow');
+  } else {
+    $('.back-to-top-link').fadeOut('slow');
+  }
+});
 
+$('.back-to-top-link').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1500, 'easeInOutExpo');
+  return false;
+});
     // jQuery counterUp
     $('[data-toggle="counter-up"]').counterUp({
       delay: 10,

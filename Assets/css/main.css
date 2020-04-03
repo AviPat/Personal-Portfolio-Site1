@@ -60,7 +60,7 @@
 }
 
 .nav-menu {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .nav-menu ul li {
@@ -830,6 +830,28 @@ section {
   opacity: 0.8;
 }
 
+.back-to-top-link {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #149ddd;
+  color: #fff;
+  -webkit-transition: display 0.5s ease-in-out;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top-link i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;
@@ -842,6 +864,12 @@ section {
 @media (min-width: 1024px) {
   #hero-banner {
     background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .rating > label {
+    margin-right: 5px;
   }
 }
 
@@ -896,8 +924,26 @@ section {
   .rating-wrapper .rating-form .rating-flx .rate-right {
     display: none;
   }
+  .rating-wrapper .rating-form .star-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rating-wrapper .rating-form .star-rating h6 {
+    font-size: 0.85rem;
+    margin-right: 10px;
+  }
+  .rating-wrapper .rating-form label {
+    font-size: 0.8rem;
+  }
   .rating > label {
-    margin-right: 18px;
+    margin-right: -2px;
+  }
+  .starText {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
